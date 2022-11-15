@@ -11,7 +11,27 @@ body {
 	height: 250px;
 	border-radius: 50%;
 	background-color: #e74c3c;
+    animation-name: pohyb;
+    animation-duration: 5s;
+    animation-direction: alternate; /* jede tam a zpět*/
+    animation-iteration-count: infinite; /*kolikrát se má animace zopakovat, infinite-nekonečné opakování*/
 }
+/*animation-fill--mode: f něco zůstane stát na konci
+animation-delay: 20s - 20 sec se odpočítá, než se spustí animace*/
+
+
+@keyframes pohyb {
+    from{ /* můžeme nahradit slova procenty a na každém nastavit něco jiného*/
+        background-color: #e74c3c;
+        transform: translate(0,0);
+    }
+
+    to {background-color: blueviolet;
+        transform: translate(300px,300px);
+
+    }
+}
+
 
 
 /*

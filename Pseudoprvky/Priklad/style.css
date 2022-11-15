@@ -17,3 +17,18 @@ CSS Selektory:
 ::before
 ::after
 */
+
+.odstavec1::first-letter{
+    color: blue;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.odstavec2::first-line{
+    font-size: 25px;
+    color: blueviolet;
+}
+
+h1::before{
+    content: asladlfj; /* Obsah před.. vyplní něčím to prázdno v html kodu, reálně to tam není-nelze označit. Nevyužijeme na texty, dá se to využít jako třeba povinný argument u formuláře-after::* */
+}
